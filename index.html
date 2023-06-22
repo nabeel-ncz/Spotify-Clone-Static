@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/spotify-favicon.png " type="image/x-icon">
+    <!-- Main css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Spotify</title>
+</head>
+
+<body>
+    <!-- container starts -->
+    <div class="container">
+        <!-- left side nav -->
+        <div class="main-container-l">
+            <!-- home and search  -->
+            <header>
+                <div class="link-block active">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <span>Home</span>
+                </div>
+                <div class="link-block">
+                    <i class='bx bx-search'></i>
+                    <span>Search</span>
+                </div>
+            </header>
+            <!-- side nav -->
+            <nav>
+                <div class="nav-top">
+                    <div class="lib-btn">
+                        <i class='bx bxs-book'></i>
+                        <span>Your Library</span>
+                    </div>
+                    <div class="icons-nav-top">
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                </div>
+                <div class="categ-btns">
+                    <div class="categ-name">Playlist</div>
+                    <div class="categ-name">Artists</div>
+                </div>
+                <div class="search-recent-container">
+                    <div class="search-bar">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <select class="recent-btn" name="cars" id="cars">
+                        <option value="volvo">Recent</option>
+                        <option value="saab">Liked</option>
+                        <option value="opel">Artist</option>
+                        <option value="audi">Playlist</option>
+                    </select>
+
+                </div>
+                <div class="recent-container">
+                    <div class="liked-songs-container">
+                        <img class="cover-img" src="./assets/liked-songs-cover.jpg">
+                        <div class="details">
+                            <h6>Liked Songs</h6>
+                            <span><i class='bx bxs-pin'></i> Playlist . 10 Songs </span>
+                        </div>
+                    </div>
+                    <!-- playlist -->
+                    <div class="recent-play-list">
+                        <div class="song-container">
+                            <img class="song-cover"
+                                src="https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692">
+                            <div class="song-desc">
+                                <h6>My Playlist #1</h6>
+                                <span>Playlist . nabeelncz</span>
+                            </div>
+                        </div>
+                        <div class="song-container">
+                            <img class="song-cover"
+                                src="https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692">
+                            <div class="song-desc">
+                                <h6>My Playlist #2</h6>
+                                <span>Playlist . nabeelncz</span>
+                            </div>
+                        </div>
+                        <div class="song-container">
+                            <img class="song-cover"
+                                src="https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692">
+                            <div class="song-desc">
+                                <h6>My Playlist #3</h6>
+                                <span>Playlist . nabeelncz</span>
+                            </div>
+                        </div>
+                        <!-- artist list -->
+                        <div class="artist-block">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c"
+                                class="artist-img-cover">
+                            <div class="artist-description">
+                                <h6>Alan walker</h6>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-block">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c"
+                                class="artist-img-cover">
+                            <div class="artist-description">
+                                <h6>Alan walker</h6>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- left side nav ends here -->
+        <!-- main section -->
+        <div class="main-container-r">
+            <!-- header-section -->
+            <header>
+                <div class="header-l-back-forward">
+                    <div class="arrow">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="arrow">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+                <div class="header-r-profile">
+                    <div class="premium-btn">
+                        Explore Premium
+                    </div>
+                    <div class="install-btn">
+                        Install App
+                    </div>
+                    <div class="profile-btn">
+                        <i class='bx bx-user' ></i>
+                    </div>
+                </div>
+            </header>
+            <!-- header ends -->
+            <!-- audio-list -->
+            <div id="audio-container-section">
+                <!-- recent section -->
+                <div class="section-block">
+                    <div class="section-header">
+                        <h6 class="category-name">
+                            Recently played
+                        </h6>
+                    </div>
+                    <div class="audio-container">
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://i.scdn.co/image/ab67706f00000002beda9dbb1fc24652dfe30e78">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://c.saavncdn.com/017/Thallumaala-Malayalam-2022-20230110143259-500x500.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://c.saavncdn.com/238/Sulaikha-Manzil-Malayalam-2023-20230509171010-500x500.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://c.saavncdn.com/703/Chekuthan-Malayalam-2021-20220422235714-500x500.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://i.scdn.co/image/ab67616d0000b2732ecc37f3c8241e9bf2df8cca">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trending now -->
+                <div class="section-block">
+                    <div class="section-header">
+                        <h6 class="category-name">
+                            Trending now
+                        </h6>
+                    </div>
+                    <div class="audio-container">
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6FrlwVjNaZVebE1Yiu52YheGlGe5cBJOrBwdJzOfCMZ3jYa37gCy8UivfUsZ8TUg7s4&usqp=CAU">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0rMwW5yF3v3VAm-nlXuK4xJiQsSWUCQhyFLGtFYNh1ldKJ_Euec5xeU94IB_1Lmpoz0&usqp=CAU">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2022/03/spotify-playlist-cover-woman-listeningt-to-headphones-purple-music-032322.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://cdn.shopify.com/s/files/1/0073/9816/2505/products/23_1200x630.png?v=1655082901">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BjWFd7hwe6NI25flaGiUQScxrFR69XJHWg&usqp=CAU">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Indias best -->
+                <div class="section-block">
+                    <div class="section-header">
+                        <h6 class="category-name">
+                            Indias best
+                        </h6>
+                    </div>
+                    <div class="audio-container">
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumT3s3naoOdQgYr0jWFYcJT0smcHhrc2HgA&usqp=CAU">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="data:image/jpeg;base64,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">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://i.pinimg.com/originals/63/a0/08/63a008f631ae7492a75a001bd0791e8f.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfrvl5GJfleFJD52tcjHndJKm4ipw5U7fZQA&usqp=CAU">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQYB1_5O2xiuS6eGAEcbv9-lpI-el46bSUw&usqp=CAU">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- new release for you -->
+                <div class="section-block">
+                    <div class="section-header">
+                        <h6 class="category-name">
+                            New release for you
+                        </h6>
+                    </div>
+                    <div class="audio-container">
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://i.scdn.co/image/ab67706f00000002beda9dbb1fc24652dfe30e78">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Song name
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://c.saavncdn.com/017/Thallumaala-Malayalam-2022-20230110143259-500x500.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Manasakamil
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://c.saavncdn.com/238/Sulaikha-Manzil-Malayalam-2023-20230509171010-500x500.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Haalake Marunne
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://c.saavncdn.com/703/Chekuthan-Malayalam-2021-20220422235714-500x500.jpg">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Chekuthan
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="audio-cover" src="https://i.scdn.co/image/ab67616d0000b2732ecc37f3c8241e9bf2df8cca">
+                                
+                            <div class="audio-details">
+                                <span class="audio-name">
+                                    Kaapa
+                                </span>
+                                <span class="audio-categ-desc">
+                                    lorem ipsum sit amet lor vander 
+                                    ipsum sit amet lor vander
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- popular artists -->
+                <div class="section-block">
+                    <div class="section-header">
+                        <h6 class="category-name">
+                            Popular Artists
+                        </h6>
+                    </div>
+                    <div class="audio-container">
+                        <div class="audio-card">
+                            <img class="artist-cover" src="data:image/jpeg;base64,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">
+                                
+                            <div class="artist-details">
+                                <span class="artist-name">
+                                    Drake
+                                </span>
+                                <span class="artist-categ">
+                                    Artist
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="artist-cover" src="https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36">
+                                
+                            <div class="artist-details">
+                                <span class="artist-name">
+                                    Justin Bieber
+                                </span>
+                                <span class="artist-categ">
+                                    Artist
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="artist-cover" src="https://i.scdn.co/image/ab67706c0000da841396027418589891278c0838">
+                                
+                            <div class="artist-details">
+                                <span class="artist-name">
+                                    Alan Walker
+                                </span>
+                                <span class="artist-categ">
+                                    Artist
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="artist-cover" src="https://i.scdn.co/image/ab67706c0000da844d91cad10bf0583bc908295d">
+                                
+                            <div class="artist-details">
+                                <span class="artist-name">
+                                    Arjith Sing
+                                </span>
+                                <span class="artist-categ">
+                                    Artist
+                                </span>
+                            </div>
+                        </div>
+                        <div class="audio-card">
+                            <img class="artist-cover" src="https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b">
+                                
+                            <div class="artist-details">
+                                <span class="artist-name">
+                                    Eminem
+                                </span>
+                                <span class="artist-categ">
+                                    Artist
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="section-blank">
+                    <!-- blank seciton -->
+                </div>
+            </div>
+            <!-- audio list ends here -->
+        </div>
+    </div>
+    <!-- audio control panel starts here -->
+    <div class="audio-control-bar">
+        <div class="playing-audio">
+            <img src="https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c" alt="" class="audio-cover">
+            <div class="audio-details">
+                <span>Song name</span>
+                <span>Song author</span>
+            </div>
+            <div class="audio-ctrl">
+                <i class='bx bx-heart' ></i>
+                <i class='bx bx-screenshot' ></i>
+            </div>
+        </div>
+        <div class="audio-control-panel">
+            <div class="audio-controls">
+                <div class="shuffle">
+                    <i class='bx bx-shuffle' ></i>
+                </div>
+                <div class="previous">
+                    <i class='bx bx-skip-previous' ></i>
+                </div>
+                <div class="play-and-pause">
+                    <i class='bx bx-play' ></i>
+                </div>
+                <div class="next">
+                    <i class='bx bx-skip-next' ></i>
+                </div>
+                <div class="repeat">
+                    <i class='bx bx-repeat' ></i>
+                </div>
+            </div>
+            <div class="audio-slider">
+                <span>0:00</span>
+                <input type="range">
+                <span>1:00</span>
+            </div>
+        </div>
+        <div class="extra-controls-section">
+            <i class='bx bxs-coin-stack'></i>
+            <i class='bx bx-microphone' ></i>
+            <i class='bx bx-speaker' ></i>
+            <i class='bx bx-volume-low' ></i>
+            <input type="range">
+        </div>
+        <!-- audio control panel ends -->
+    </div>
+    <!-- container ends -->
+    
+</body>
+
+</html>
